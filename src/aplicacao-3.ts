@@ -1,9 +1,9 @@
 import { Cliente } from "./models/Cliente";
 import { ContaCorrente } from "./models/ContaCorrente";
 
-const cliente = new Cliente("12345678900", "Fulano", "123456789", false);
+const cliente = new Cliente("12345678900", "Alison Taylor", "123456762", false);
 
-const contaCorrente = new ContaCorrente("123456", 500, cliente);
+const contaCorrente = new ContaCorrente("CC001", 500, cliente);
 
 contaCorrente.depositar(100);
 contaCorrente.depositar(100);
