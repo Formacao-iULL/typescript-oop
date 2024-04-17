@@ -10,6 +10,14 @@ export class ContaCorrente extends Conta {
         this._limite = limite;
     }
 
+    public get limite(): number {
+        return this._limite;
+    }
+
+    public set limite(value: number) {
+        this._limite = value;
+    }
+
     transferir(contaDestino: Conta, valor: number): void {
         const saldoComLimite = this.calcularSaldo() + this._limite;
         if (saldoComLimite - valor >= 0) {
