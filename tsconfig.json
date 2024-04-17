@@ -1,16 +1,15 @@
 {
-  "compilerOptions":
-    {
-      "target": "ES5",
-      "module": "commonjs",
-      "outDir": "dist",
-      "esModuleInterop": true,
-      "lib": ["ES5"],
-      "moduleResolution": "node",
-      "strict": true, 
-      "noEmitOnError": true,
-      "noImplicitAny": true,
-    },
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "lib": ["es5", "dom"],
+    "moduleResolution": "node",
+    "strict": false,
+    "noEmitOnError": true,
+    "noImplicitAny": true
+  },
   "include": ["./src"],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules"]
 }
