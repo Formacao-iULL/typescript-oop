@@ -4,11 +4,9 @@ import { Credito } from "./Credito";
 import { Debito } from "./Debito";
 
 export class ContaPoupanca extends Conta {
-    private _conta: Conta;
 
-    constructor(numero: string, conta: Conta, cliente: Cliente) {
+    constructor(numero: string, cliente: Cliente) {
         super(numero, cliente);
-        this._conta = conta;
     }
 
     depositar(valor: number) {
