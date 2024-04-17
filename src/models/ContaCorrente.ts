@@ -4,12 +4,10 @@ import { Debito } from "./Debito";
 
 export class ContaCorrente extends Conta {
     private _limite: number;
-    private _conta: Conta;
 
-    constructor(numero: string, limite: number, conta: Conta, cliente: Cliente) {
+    constructor(numero: string, limite: number, cliente: Cliente) {
         super(numero, cliente);
         this._limite = limite;
-        this._conta = conta;
     }
 
     transferir(contaDestino: Conta, valor: number): void {
